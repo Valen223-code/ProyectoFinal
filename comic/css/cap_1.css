@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el círculo de fondouno.png */
+#circle {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado absoluto */
+    cursor: pointer;
+    animation: scaleUpOne 1s ease-in-out infinite; /* Animación infinita específica */
+}
+
+/* Animación para el círculo de fondouno.png */
+@keyframes scaleUpOne {
+    0% {
+        transform: translate(-50%, -50%) scale(1); /* Mantiene el centrado */
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5); /* Escala hacia el 150% */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Vuelve al tamaño original */
+    }
+}
+
+/* Estilo para el círculo de fondo2.png */
+#circle2 {
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c; /* Diferente color para diferenciar */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado absoluto */
+    cursor: pointer;
+    animation: scaleUpTwo 1s ease-in-out infinite; /* Animación infinita específica */
+}
+
+/* Animación para el círculo de fondo2.png */
+@keyframes scaleUpTwo {
+    0% {
+        transform: translate(-50%, -50%) scale(1); /* Mantiene el centrado */
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5); /* Escala hacia el 150% */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Vuelve al tamaño original */
+    }
+}
+
+/* Estilo para el círculo del tercer fondo */
+#circle3 {
+    width: 50px;
+    height: 50px;
+    background-color: #f1c40f; /* Color distintivo */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado absoluto */
+    cursor: pointer;
+    animation: scaleUp 1s ease-in-out infinite; /* Animación infinita */
+}
+.logo{
+    width: 20vh;
+}
+
+#num{
+    display: none;
+}

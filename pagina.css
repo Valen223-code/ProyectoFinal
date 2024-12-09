@@ -1,0 +1,633 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parte-1{
+    background-image: url(./img/fondouno.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.logo{
+    height: 100vh;
+}
+.text-orange{
+    width: 100%;
+    color: orangered;
+    font-size: 4rem;
+}
+.proyecto{
+    background-color: black;
+    height: 70vh;
+}
+.icono-proyecto{
+    width: 35vh;
+    height: 30vh;
+}
+
+.muñeco {
+    width: 500px;
+    height: auto; 
+}
+
+.img-fluid {
+  max-width: 150px; 
+  height: auto; 
+}
+
+.bg-image-small-1 {
+    background-image: url(./img/universo\ curioso.png);
+    height: 250px;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-image-large-1 {
+    background-image: url(./img/curioso22.png);
+    height: 250px;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-image-large-2 {
+    background-image: url(./img/universocurioso3.png);
+    height: 250px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-image-small-2 {
+    background-image: url(./img/nubesol.png);
+    height: 250px;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.sinopsis{
+  background-color: black;
+
+}
+
+  .svg-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .svg-frame svg {
+    position: absolute;
+    transition: .5s;
+    z-index: calc(1 - (0.2 * var(--j)));
+    transform-origin: center;
+    width: 344px;
+    height: 344px;
+    fill: none;
+  }
+  
+  .svg-frame:hover svg {
+    transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+  }
+  
+  .svg-frame svg #center {
+    transition: .5s;
+    transform-origin: center;
+  }
+  
+  .svg-frame:hover svg #center {
+    transform: rotate(-30deg) translateX(45px) translateY(-3px);
+  }
+  
+  #out2 {
+    animation: rotate16 7s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #out3 {
+    animation: rotate16 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    stroke: #ff0;
+  }
+  
+  #inner3,
+  #inner1 {
+    animation: rotate16 4s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #center1 {
+    fill: #ff0;
+    animation: rotate16 2s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  @keyframes rotate16 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+.card {
+    position: relative;
+    width:5000px;
+    height: 400px;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+  }
+  
+  .card::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    border-radius: 1.2em;
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff7700, #ff5e00);
+    filter: blur(30px);
+  }
+  
+  .card span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    border-radius: 1em;
+  }
+  
+  .card span::before {
+    content: '';
+    position: center;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .card .content {
+    position: relative;
+    padding: 10px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+/* From Uiverse.io by eslam-hany */ 
+.card-tarjeta{
+    position: relative;
+    width: 220px;
+    height: 320px;
+    /* background: mediumturquoise; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(16, 15, 15);
+  }
+  
+  .card-tarjeta::before,
+  .card-tarjeta::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(16, 16, 16);
+    transition: all 0.5s;
+   
+  }
+  
+  .card-tarjeta::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card-tarjeta::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card-tarjeta:hover::before,
+  .card-tarjeta:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card-tarjeta1:hover:after {
+    content: "EL UNIVERSO TIENE 13.8 MIL MILLONES DE AÑOS";
+    text-align: center;
+    background-color: #c5c5c5;
+  }
+  .card-tarjeta2:hover:after {
+    content: "LA ESTRELLA MAS CERCANA AL SOL ES PROXIMA CENTAURI A 4.24 AÑOS LUZ";
+    text-align: center;
+    background-color: #c5c5c5;
+  }
+  .card-tarjeta3:hover:after {
+    content: "EL PLANETA MAS GRANDE DE NUESTRO SISTEMA SOLAR ES JUPITER";
+    text-align: center;
+    background-color: #c5c5c5;
+  }
+  .card-tarjeta4:hover:after {
+    content: "LA LUNA ES EL QUINTO SATELITE NATURAL MAS GRANDE";
+    text-align: center;
+    background-color: #c5c5c5;
+  }
+
+  .card-tarjeta4:hover:after {
+    content: "EL SOL ES UNA ESTRELLA TIPO G2V Y REPRESENTA EL 99.8% DE LA MASA DEL SITEMA SOLAR";
+    text-align: center;
+    background-color: #c5c5c5;
+  }
+  .boton-show {
+    width: 10em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   .boton-show::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #d8b00f 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .boton-show:hover::before {
+    width: 70em;
+   }
+  
+   @media screen and (max-width:500px) {
+    .proyecto{
+        background-color: black;
+        height: 100vh;
+    }
+   }
+
+  .c-button {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .c-button--gooey {
+    color: #d95006;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid #d95e06;
+    border-radius: 0;
+    position: relative;
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+  }
+  
+  .c-button--gooey .c-button__blobs div {
+    background-color: #dd5500;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+  }
+  
+  .c-button--gooey:hover {
+    color: #fff;
+  }
+  
+  .c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+  }
+
+  .perro {
+    width: 190px;
+    height: 254px;
+   background-repeat: no-repeat;
+    background-image: url(/img/drako.png);
+    text-align: center;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(238, 40, 40, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+
+  }
+  
+  .perro:hover{
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background:  rgb(158, 67, 189);
+  }
+  
+  .perro-1 {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .perro:hover .perro-1 {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .gato {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .perro:hover .gato {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+  
+  .pajaro {
+    width: 190px;
+    height: 254px;
+   background-repeat: no-repeat;
+    background-image: url(/img/lyra.png);
+    text-align: center;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(238, 40, 40, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+
+  }
+  
+  .pajaro:hover{
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background:  rgb(158, 67, 189);
+  }
+  
+  .pajaro-1 {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .pajaro:hover .pajaro-1 {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .leon {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .pajaro:hover .leon {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+  
+  .rosado {
+    width: 190px;
+    height: 254px;
+   background-repeat: no-repeat;
+    background-image: url(/img/Nebulosa.png);
+    text-align: center;
+    background-size: cover;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(238, 40, 40, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+
+  }
+  
+  .rosado:hover{
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: rgb(158, 67, 189);
+  }
+  
+  .rosado-1 {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .rosado:hover .rosado-1 {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .negro {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .rosado:hover .negro {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+  
+  .rojo {
+    width: 190px;
+    height: 254px;
+   background-repeat: no-repeat;
+    background-image: url(/img/monstruo.png);
+    text-align: center;
+    background-size: cover;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(238, 40, 40, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+
+  }
+  
+  .rojo:hover{
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: rgb(158, 67, 189);
+  }
+  
+  .rojo-1 {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .rojo:hover .rojo-1 {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .verde {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .rojo:hover .verde {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+  
+  .row-personajes{
+    background-image: url(./img/fondo2.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }

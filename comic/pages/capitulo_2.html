@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../boostrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/cap_1.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main class="contaienr-fluid">
+
+      <div class="row d-flex justify-content-center align-items-center">
+        <!-- medu de navegacion y logo -->
+ <div class="row bg-body-tertiary d-flex justify-content-between align-items-center">
+   <nav class="navbar navbar-expand-lg">
+     <div class="container-fluid ">
+       <a class="navbar-brand" href="../index.html">
+         <img src="../assets/img/astrumlogo.png" alt="Logo" class="logo">
+       </a>
+       <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon light"></span>
+       </button>
+       <div class="collapse navbar-collapse justify-content-end caja p-4 " id="navbarNav">
+         <ul class="navbar-nav d-flex gap-4">
+           <li class="nav-item">
+             <a class="nav-link text-seconday fw-bold" aria-disabled="true" href="../index.html">Capitulos</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-seconday fw-bold active" href="/index.html">Astrum</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </div>
+   </div>
+   <div class="row">
+
+    <h2 class="text-center my-3 text-primary">Capitulo 2</h2>
+
+   </div>
+
+      
+       <div class="row d-flex justify-content-center align-items-center">
+
+        <div class="col-lg-8 d-flex justify-content-center align-items-center">
+
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- Aquí se colocará el círculo -->
+                <div id="circle"></div>
+                <img src="../assets/img/fondouno.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <!-- Agregar evento a la imagen de fondo2.png -->
+                <div id="circle2"></div>
+                <img id="img2" src="../assets/img/fondo2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <!-- Agregar evento para fondo3.png -->
+                <div id="circle3"></div>
+                <img id="img3" src="../assets/img/fondo3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true" id="btnAdd" ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div>
+
+       </div>
+
+      <div class="row d-flex justify-content-center align-items-center">
+
+        <!-- Botones para navegación -->
+      <div class="col-lg-8 d-flex justify-content-center align-items-center my-3">
+        <a  href="../index.html" class="btn btn-primary mx-5">Volver a los capítulos</a>
+        <a  href="../pages/capitulo_3.html" class="btn btn-primary mx-5">Siguiente capítulo</a>
+    </div>
+
+      </div>
+
+
+  </main>
+
+       </div>
+
+    <h1 id="num">0</h1>
+
+    <script src="../js/cap_1.js"></script>
+    <script src="../boostrap/bootstrap.js"></script>
+    <script src="../js/capitulo_2.js"></script>
+    <script src="../js/circle-interaction.js"></script>
+    <script src="../js/circle2-interaction.js"></script>
+</body>
+</html>
